@@ -1,0 +1,96 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(45deg ,blue,cyan,#add8e6, #ffc0cb,pink,red);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+
+#titleBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    font-family: cursive;
+    font-size: 2rem;
+    color: white;
+    
+    
+
+}
+
+#clockBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-family: cursive;
+    color: white;
+    /* border: 2px solid black; */
+    /* width: 50%;
+    margin-left: 25%; */
+    /* background: pink;
+    opacity: 40%;
+    border-radius: 15%; */
+    
+    
+}
+
+#button {
+    color: white;
+    font-size: 1.5rem;
+    font-family: cursive;
+
+}
+
+#list {
+    list-style: none;
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;   
+}
+
+#list li {
+    margin-right: 35px;
+    font-size: 2rem;
+    
+}
+
+#list button{
+    background-color: rgba(0, 0, 255, 0.5); 
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    font-family: cursive;
+}
+
+#list button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+.s1 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
